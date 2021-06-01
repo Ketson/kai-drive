@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--
+    ICA 3/4 de Sistemas Multimidia
+    Turma: Sistemas de Informaçao 5 noturno
+    Tema: Educacao no Transito
+        Grupo: 
+            Jeferson Silva Dettman
+            Mateus Garcia Lopes
+            Maicon Loureiro
+            Michele Dalarme
+            Vitor Knupp Costa
+-->
+<html>
+
+<head>
+    <title>
+        KAI Drive! 1.0
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="estilo.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icone.png" type="image/png" />
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Sistemas Multimídia: KAI Drive!</h1>
+        <div id="esquerda" class="box">
+
+
+        </div>
+        <div id="cenario" class="box">
+            <canvas id="mycanvas" width="612" height="440">
+            </canvas>
+        </div>
+        <div id="direita" class="box">
+            <a href='#' onclick=novojogo()>Novo Jogo!</a>
+            <hr>
+            <div id='quiz'>
+            </div>
+        </div>
+    </div>
+
+
+    <!--script que constroi o cenario-->
+    <script type="text/javascript" src="contexto.js"></script>
+    <!--script que gera animaçoes -->
+    <script type="text/javascript" src="AnimaPlaca.js"></script>
+    <!--script que anima os sprites do policial -->
+    <script type="text/javascript" src="AnimaPolicial.js"></script>
+    <!--script que gera e valida as perguntas e formularios do quiz-->
+    <script type="text/javascript" src="quiz.js"></script>
+    <!--script que chama e controla as perguntas e as falas -->
+    <script type="text/javascript" src='controle.js'></script>
+
+</body>
+
+</html>
